@@ -4,6 +4,7 @@ import path from "node:path";
 
 export default defineConfig({
   plugins: [react()],
+  base: "./", // caminhos relativos: funciona em username.github.io/qualquer-repo/
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
